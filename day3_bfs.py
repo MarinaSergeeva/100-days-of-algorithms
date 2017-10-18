@@ -13,14 +13,15 @@ def bfs(graph, source):
             if el not in discovered:
                 queue.append(el)
                 discovered.add(el)
-                
+    return visited
+
 def test_bfs():
     graph = {0: [1, 2],
             1: [4],
             2: [3],
             3: [2],
             4:[]}
-    bfs(graph, 0)
+    visited = bfs(graph, 0)
 
 if __name__ == "__main__":
     test_bfs()
