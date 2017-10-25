@@ -13,3 +13,4 @@ Implemented so far:
 * [Karger's random contraction algorithm](day09_random_contraction.py)
 * [Euclidean algorithm for greatest common divisor and least common multiple](day10_euclidean_algorithm_gcd_lcm.py)
 * [Median maintenance in O(logn)](day12_median_maintenance.py)
+* [Selection sort and heap sort](day13_selection_and_heapsort.py)
