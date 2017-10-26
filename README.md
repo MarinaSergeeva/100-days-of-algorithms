@@ -12,6 +12,7 @@ Implemented so far:
 * [Kosaraju's strongly connected components](day08_kosaraju_strongly_connected_components.py)
 * [Karger's random contraction algorithm](day09_random_contraction.py)
 * [Euclidean algorithm for greatest common divisor and least common multiple](day10_euclidean_algorithm_gcd_lcm.py)
+* [Karatsuba multiplication](day11_karatsuba.py)
 * [Median maintenance in O(logn)](day12_median_maintenance.py)
 * [Selection sort and heap sort](day13_selection_and_heapsort.py)
 * [Randomized selection for kth order statistics](day14_randomized_selection.py)
