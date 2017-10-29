@@ -16,3 +16,5 @@ Implemented so far:
 * [Median maintenance in O(logn)](day12_median_maintenance.py)
 * [Selection sort and heap sort](day13_selection_and_heapsort.py)
 * [Randomized selection for kth order statistics](day14_randomized_selection.py)
+* [Heap](day15_heap.py)
+* [Count inversions](day16_count_inversions.py)
