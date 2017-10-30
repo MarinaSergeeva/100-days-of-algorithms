@@ -18,3 +18,4 @@ Implemented so far:
 * [Randomized selection for kth order statistics](day14_randomized_selection.py)
 * [Heap](day15_heap.py)
 * [Count inversions](day16_count_inversions.py)
+* [Closest pair in 2d](day17_closest_pair.py)
