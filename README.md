@@ -19,3 +19,4 @@ Implemented so far:
 * [Heap](day15_heap.py)
 * [Count inversions](day16_count_inversions.py)
 * [Closest pair in 2d](day17_closest_pair.py)
+* [Strassen's matrix multiplication](day18_strassen_matrix_multiplication.py)
