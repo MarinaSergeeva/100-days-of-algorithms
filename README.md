@@ -21,3 +21,4 @@ Implemented so far:
 * [Closest pair in 2d](day17_closest_pair.py)
 * [Strassen's matrix multiplication](day18_strassen_matrix_multiplication.py)
 * [Scheduling](day19_scheduling.py)
+* [Binomial coefficients](day20_binomial_coefficients.py)
