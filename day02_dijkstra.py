@@ -1,18 +1,29 @@
 import heapq
+from math import inf
 
 def dijkstra(graph, source):
     visited = set([source])
-    distances = {source:0}
-    cut_edges = [(el[1],(source, el[0])) for el in graph[source]] #for compatibility with heapq
-    heapq.heapify(cut_edges)
+    distances = {v: inf for v in graph}
+    # parents = {v: None for v in graph}
+    distances[source] = 0
+    for (v, w) in graph[source]:
+        distances[v] = w
+        # parents[v] = source
+    vertices_heap = [(w, v) for (v, w) in graph[source]]
+    heapq.heapify(vertices_heap)
     while len(visited) != len(graph):
-        (weight, edge) = heapq.heappop(cut_edges)
-        next_vertex = edge[1]
+        (weight, next_vertex) = heapq.heappop(vertices_heap)
+        while next_vertex in visited:
+            (weight, next_vertex) = heapq.heappop(vertices_heap)
         distances[next_vertex] = weight
         visited.add(next_vertex)
-        cut_edges = [el for el in cut_edges if el[1][1] != next_vertex]
-        cut_edges += [(weight + el[1], (next_vertex, el[0])) for el in graph[next_vertex] if el[0] not in visited]
-        heapq.heapify(cut_edges)
+        for (v, w) in graph[next_vertex]:
+            if v not in visited:
+                new_distance = w + distances[next_vertex]
+                if new_distance < distances[v]:
+                    distances[v] = new_distance
+                    # parents[v] = next_vertex
+                    heapq.heappush(vertices_heap, (new_distance, v))
     return distances
 
 def test_dijkstra():
@@ -23,3 +34,6 @@ def test_dijkstra():
             4:[]}
     res = {0: 0, 1: 1, 3: 2, 2: 5, 4: 6}
     assert dijkstra(graph, 0) == res
+
+if __name__ == "__main__":
+    test_dijkstra()
