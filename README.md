@@ -22,3 +22,5 @@ Implemented so far:
 * [Strassen's matrix multiplication](day18_strassen_matrix_multiplication.py)
 * [Scheduling](day19_scheduling.py)
 * [Binomial coefficients](day20_binomial_coefficients.py)
+* [Prim's minimum spanning tree](day21_prim_mst.py)
+* [Floyd-Warshall all pairs shortest path](day22_floyd_warshall.py)
