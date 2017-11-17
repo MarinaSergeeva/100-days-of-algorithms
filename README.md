@@ -24,3 +24,6 @@ Implemented so far:
 * [Binomial coefficients](day20_binomial_coefficients.py)
 * [Prim's minimum spanning tree](day21_prim_mst.py)
 * [Floyd-Warshall all pairs shortest path](day22_floyd_warshall.py)
+* [Union-find data structure](day23_union_find.py)
+* [Kruskal's minimum spanning tree](day24_kruskal.py)
+* [Single link clustering](day25_single_link_clustering.py)
