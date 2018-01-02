@@ -27,3 +27,6 @@ Implemented so far:
 * [Union-find data structure](day23_union_find.py)
 * [Kruskal's minimum spanning tree](day24_kruskal.py)
 * [Single link clustering](day25_single_link_clustering.py)
+* [Huffman codes](day26_huffman_codes.py)
+* [Knapsack problem](day27_knapsack.py)
+* [Sequence alignment and edit distance](day28_sequence_alignment.py)
